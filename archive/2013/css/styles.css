@@ -1,0 +1,456 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* fonts */
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/museo-500-webfont.eot');
+    src: url('../fonts/museo-500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo-500-webfont.woff') format('woff'),
+         url('../fonts/museo-500-webfont.ttf') format('truetype'),
+         url('../fonts/museo-500-webfont.svg#Museo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/museosans-700-webfont.eot');
+    src: url('../fonts/museosans-700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans-700-webfont.woff') format('woff'),
+         url('../fonts/museosans-700-webfont.ttf') format('truetype'),
+         url('../fonts/museosans-700-webfont.svg#MuseoSans') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/museosans-300-webfont.eot');
+    src: url('../fonts/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans-300-webfont.woff') format('woff'),
+         url('../fonts/museosans-300-webfont.ttf') format('truetype'),
+         url('../fonts/museosans-300-webfont.svg#museo_sans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/museosans-300italic-webfont.eot');
+    src: url('../fonts/museosans-300italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans-300italic-webfont.woff') format('woff'),
+         url('../fonts/museosans-300italic-webfont.ttf') format('truetype'),
+         url('../fonts/museosans-300italic-webfont.svg#MuseoSans') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* global */
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.428571429;
+	color: #222;
+	background: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	min-width: 990px;
+}
+
+section {
+	position: relative;
+}
+
+.angle {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.scrolldown {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 1em;
+	z-index: 99;
+	text-align: center;
+}
+
+.spacer {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.container {
+	width: 990px;
+	margin: 40px auto 0 auto;
+}
+
+.container:before,
+.container:after {
+	content: " ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+h2 {
+	font-size: 60px;
+	font-family: 'Museo';
+}
+
+/* backgrounds */
+
+#home {
+	background-image: url('../images/horseshoebend2_background.jpg');
+	height: 600px;
+}
+
+#ttl2 {
+	background-image: url('../images/ttl2_background.jpg');
+	height: 400px;
+}
+
+#phoenix {
+	background-image: url('../images/phoenix_background.jpg');
+	height: 400px;
+}
+
+#ttl {
+	background-image: url('../images/tempetownlake_background.jpg');
+	height: 400px;
+}
+
+.background {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment:  fixed;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	position: relative;
+}
+
+/* top (home) panel */
+
+#home .top {
+	margin: 0 auto;
+}
+
+#home #logo {
+	position: relative;
+	font-family: 'MuseoSans';
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 20px 0;
+	margin: 140px auto 0 auto;
+	width: 760px;
+}
+
+#home #logo .name {
+	font-size: 80px;
+	line-height: 1.25em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#home #logo .tagline {
+	font-size: 42px;
+	line-height: 1.25em;
+	font-style: italic;
+}
+
+#home #navigation > ul {
+	margin: 24px 0;
+	overflow: hidden;
+}
+
+#home #navigation > ul > li {
+	display: inline;
+}
+
+#home #navigation > ul > li > a {
+	display: inline-block;
+	padding: 0 14px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+#home #navigation > ul > li > a:hover {
+	color: #ddd;
+}
+
+/* skills panel */
+
+#skills {
+	padding: 24px 0 72px 0;
+	text-align: center;
+}
+
+#skills ul {
+	margin: 30px 0 40px 0;
+	overflow: hidden;
+}
+
+#skills ul > li {
+	float: left;
+	width: 135px;
+	height: 135px;
+	margin: 0 15px;
+	background: url('../images/creativesuite_sprite.png') no-repeat;
+	background-size: 450px 300px;
+}
+
+#skills ul > li.photoshop {
+	background-position: 0 0;
+}
+
+#skills ul > li.illustrator {
+	background-position: -150px 0;
+}
+
+#skills ul > li.indesign {
+	background-position: -300px 0;
+}
+
+#skills ul > li.html {
+	background-position: 0 -150px;
+}
+
+#skills ul > li.css {
+	background-position: -150px -150px;
+}
+
+#skills ul > li.jquery {
+	background-position: -300px -150px;
+}
+
+#skills > .container > p {
+	width: 620px;
+	margin: 0 auto 20px auto;
+}
+
+/* experience */
+
+#experience {
+	padding: 24px 0 72px 0;
+	text-align: center;
+}
+
+#experience .grid {
+	margin: 30px 0 10px 0;
+	overflow: hidden;
+}
+
+#experience .hoverdir {
+	overflow: hidden;
+	display: block;
+	position: relative;
+	width: 465px;
+	height: 266px;
+	margin: 0 15px 30px 15px;
+	float: left;
+}
+
+#experience .hoverdir > div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+
+#experience #qualtrics > div {
+	background: #9e0b0f;
+}
+
+#experience #igravity > div {
+	background: #0074a7;
+}
+
+#experience #pinnacle > div {
+	background: #004a95;
+}
+
+#experience #planner > div {
+	background: #7eb248;
+}
+
+#experience .hoverdir > div > span {
+	display: block;
+}
+
+#experience .hoverdir > div > span.company {
+	font-size: 28px;
+	font-weight: 700;
+	margin-top: 40px;
+}
+
+#experience .hoverdir > div > span.position {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+#experience .hoverdir > div > p.description {
+	width: 425px;
+	margin: 0 auto 10px auto;
+}
+
+#experience .hoverdir > div > p.visit a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+}
+
+#experience > .container > p {
+	width: 620px;
+	margin: 0 auto 20px auto;
+}
+
+/* about */
+
+#about {
+	padding: 24px 0 72px 0;
+}
+
+#about h2 {
+	text-align: center;
+}
+
+#about .twocolumn {
+	width: 465px;
+	margin: 30px 15px;
+	float: left;
+}
+
+#about p {
+	margin-bottom: 10px;
+}
+
+/* contact */
+
+#contact {
+	padding: 30px 0 40px 0;
+}
+
+#contact h2 {
+	text-align: center;
+}
+
+#contact #form {
+	width: 520px;
+	margin: 30px auto;
+}
+
+#contact #form label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+#contact #form .form-group {
+	margin-bottom: 15px;
+}
+
+#contact #form .form-control {
+	display: block;
+	width: 490px;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+#contact #form .form-control:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+#contact #form .btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid #357ebd;
+	color: #ffffff;
+	background-color: #428bca;
+	border-radius: 4px;
+}
+#contact #form .btn:hover {
+	background-color: #357ebd;
+}
