@@ -1,2 +1,2 @@
 # chrisheninger.com | chrisheninger.github.io
-Current/backup/archive of my personal site
+A GitHub Pages repository with my current site and backups/archives of older versions
