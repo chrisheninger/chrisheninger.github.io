@@ -27,6 +27,11 @@
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
       text-align: center;
       background-color: #37474F;
       color: rgba(255,255,255,0.87);
@@ -37,28 +42,46 @@
     }
     h1 {
       font-size: 2em;
-      margin: 0.75em 0 0.5em 0;
+      margin: 0.75em 0 0.125em 0;
+    }
+    h2 {
+      font-size: 1.25em;
+      margin: 0 0 1em 0;
     }
     a {
       background-color: transparent;
       color: rgba(255,255,255,0.87);
       text-decoration: none;
-      padding: 8px;
     }
     a:active,
     a:hover {
       outline:0
     }
+    .profile {
+      margin-bottom: 48px;
+    }
+    .profile a {
+      margin: 0 8px;
+      padding: 4px 8px;
+    }
+    .archives a {
+      padding: 4px 2px;
+    }
   </style>
-
 </head>
 <body>
-  <div>
+  <div class="profile">
     <img height="240" width="240" src="https://pbs.twimg.com/profile_images/671906902402457600/2myLHua4.jpg" />
     <h1>Chris Heninger</h1>
+    <h2>Developer</h2>
     <a href="https://twitter.com/chrisheninger" target="_blank">Twitter</a>
     <a href="https://github.com/chrisheninger" target="_blank">GitHub</a>
-    <a href="http://chrisheninger.com/resume">Resume</a>
+    <a href="resume">Resume</a>
+  </div>
+  <div class="archives">
+    <span>Archive –</span>
+    <a href="archive/2013">[ 2013 ]</a>
+    <a href="archive/2014">[ 2014 ]</a>
   </div>
 </body>
 </html>
