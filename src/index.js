@@ -8,7 +8,7 @@ import './index.css';
 
 import App from './App';
 import theme from './app-theme';
-import registerServiceWorker from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
 
 // Fela
 const renderer = createRenderer({
@@ -29,4 +29,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-registerServiceWorker();
+unregister();
