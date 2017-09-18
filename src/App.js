@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
+import { connect } from 'react-fela';
+import chroma from 'chroma-js';
 import Logo from './Logo';
-import './App.css';
 
 class App extends Component {
   render() {
+    const { styles } = this.props;
+    console.log(styles);
     return (
-      <div>
-        <div className="profile">
-          <div style={{ filter: 'drop-shadow(0 0 2px rgba(0,0,0,0.1))' }}>
-            <Logo width={180} height={180} />
+      <div className={styles.root}>
+        <div className={styles.cube}>
+          <div className={styles.logo}>
+            <Logo width={280} height={280} />
           </div>
-          <h1>Chris Heninger</h1>
+        </div>
+        <div className={styles.body}>
           <a
             href="https://twitter.com/chrisheninger"
             target="_blank"
@@ -37,4 +41,19 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect({
+  root: props => ({}),
+  cube: props => ({
+    background: props.theme.colors.red,
+    padding: '4px',
+  }),
+  logo: props => ({
+    filter: `drop-shadow(2px 1.5px 0 ${chroma(props.theme.colors.red)
+      .darken(1.75)
+      .hex()})`,
+  }),
+  body: props => ({
+    padding: '20px',
+    flex: 2,
+  }),
+})(App);

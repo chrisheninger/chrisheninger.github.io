@@ -5,7 +5,7 @@ const colors = {
   blue: '#435769',
   lightBlue: '#607D8B',
   lightestBlue: '#F7FCFE',
-  red: '#F44336',
+  red: '#c62d32',
   lightRed: '#F48794',
   orange: '#FF9800',
   primaryGlow: 'rgba(3, 169, 244, .15)',
