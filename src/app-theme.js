@@ -1,5 +1,3 @@
-import chroma from 'chroma-js';
-
 const colors = {
   primary: '#03A9F4',
   blue: '#435769',
@@ -8,7 +6,6 @@ const colors = {
   red: '#c62d32',
   lightRed: '#F48794',
   orange: '#FF9800',
-  primaryGlow: 'rgba(3, 169, 244, .15)',
   background: '#F2F2F2',
   white: '#fff',
   gray100: '#FAFAFA',
@@ -26,59 +23,6 @@ const breakpoints = {
   tabletPortrait: `@media (min-width: 600px)`,
   tabletLandscape: `@media (min-width: 900px)`,
   desktop: `@media (min-width: 1200px)`,
-};
-
-const buttonTypes = {
-  primary: {
-    backgroundColor: colors.primary,
-    hoverBackgroundColor: chroma(colors.primary)
-      .darken()
-      .hex(),
-    color: colors.white,
-    hoverColor: colors.white,
-    borderColor: 'transparent',
-    minWidth: '160px',
-  },
-  plain: {
-    backgroundColor: 'transparent',
-    hoverBackgroundColor: 'transparent',
-    color: colors.gray500,
-    hoverColor: chroma(colors.gray500)
-      .darken()
-      .hex(),
-    borderColor: 'transparent',
-    minWidth: 0,
-  },
-  plainLink: {
-    backgroundColor: 'transparent',
-    hoverBackgroundColor: 'transparent',
-    color: colors.primary,
-    hoverColor: chroma(colors.primary)
-      .darken()
-      .hex(),
-    borderColor: 'transparent',
-    minWidth: 0,
-  },
-  plainDelete: {
-    backgroundColor: 'transparent',
-    hoverBackgroundColor: 'transparent',
-    color: colors.red,
-    hoverColor: chroma(colors.red)
-      .darken()
-      .hex(),
-    borderColor: 'transparent',
-    minWidth: 0,
-  },
-  icon: {
-    backgroundColor: 'transparent',
-    hoverBackgroundColor: 'transparent',
-    color: colors.gray400,
-    hoverColor: chroma(colors.gray400)
-      .darken()
-      .hex(),
-    borderColor: 'transparent',
-    minWidth: 0,
-  },
 };
 
 const typography = {
@@ -117,7 +61,6 @@ const globalPadding = {
 
 export default {
   breakpoints,
-  buttonTypes,
   colors,
   typography,
   globalText,

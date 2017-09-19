@@ -1,40 +1,47 @@
 import React, { Component } from 'react';
 import { connect } from 'react-fela';
-import chroma from 'chroma-js';
 import Logo from './Logo';
+import GitHub from './GitHub';
+import Twitter from './Twitter';
 
 class App extends Component {
   render() {
     const { styles } = this.props;
-    console.log(styles);
+
     return (
       <div className={styles.root}>
-        <div className={styles.cube}>
-          <div className={styles.logo}>
-            <Logo width={280} height={280} />
-          </div>
+        <div className={styles.logo}>
+          <Logo width={320} height={320} />
         </div>
+        <div className={styles.position}>Front-end Developer</div>
         <div className={styles.body}>
           <a
-            href="https://twitter.com/chrisheninger"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Twitter
-          </a>
-          <a
+            className={styles.link}
             href="https://github.com/chrisheninger"
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
+            <GitHub width={32} height={32} />
           </a>
-          <a href="./resume">Resume</a>
+          <a
+            className={styles.link}
+            href="https://twitter.com/chrisheninger"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Twitter width={32} height={32} />
+          </a>
         </div>
-        <div className="archives">
-          <span>Archive –</span>
-          <a href="./archive/2013">[ 2013 ]</a>
-          <a href="./archive/2014">[ 2014 ]</a>
+        <div className={styles.archive}>
+          <a className={styles.link} href="./archive/2013">
+            [ 2013 ]
+          </a>
+          <a className={styles.link} href="./archive/2014">
+            [ 2014 ]
+          </a>
+          <a className={styles.link} href="./resume">
+            [ Resume ]
+          </a>
         </div>
       </div>
     );
@@ -42,18 +49,40 @@ class App extends Component {
 }
 
 export default connect({
-  root: props => ({}),
-  cube: props => ({
-    background: props.theme.colors.red,
-    padding: '4px',
+  root: props => ({
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
   }),
   logo: props => ({
-    filter: `drop-shadow(2px 1.5px 0 ${chroma(props.theme.colors.red)
-      .darken(1.75)
-      .hex()})`,
+    filter: `drop-shadow(1.5px 1px 0 #000)`,
+  }),
+  position: props => ({
+    display: 'flex',
+    fontSize: '18px',
+    color: '#fff',
+    filter: `drop-shadow(1.5px 1px 0 #000)`,
+    margin: '0 4px 8px 4px',
   }),
   body: props => ({
-    padding: '20px',
-    flex: 2,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }),
+  link: props => ({
+    display: 'flex',
+    color: '#fff',
+    fill: '#fff',
+    filter: `drop-shadow(1.5px 1px 0 #000)`,
+    textDecoration: 'none',
+    padding: '16px',
+    margin: '8px 4px',
+  }),
+  archive: props => ({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '24px',
   }),
 })(App);
