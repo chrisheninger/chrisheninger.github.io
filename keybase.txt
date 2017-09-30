@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/chrisheninger
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://chrisheninger.com
+  * I am chrisheninger (https://keybase.io/chrisheninger) on keybase.
+  * I have a public key ASAAf8c4RfekNt5j7LW9LdNLkPU3ag6HfC5LvaMo_pfjfQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120007fc73845f7a436de63ecb5bd2dd34b90f5376a0e877c2e4bbda328fe97e37d0a",
+      "host": "keybase.io",
+      "kid": "0120007fc73845f7a436de63ecb5bd2dd34b90f5376a0e877c2e4bbda328fe97e37d0a",
+      "uid": "9a1778e965717511e0a83b8fd02ae019",
+      "username": "chrisheninger"
+    },
+    "merkle_root": {
+      "ctime": 1506789818,
+      "hash": "61c964816d9f50d2890ead07b7d5e53f9a510b74ced4071d066e23fb581de79084f6636aea6f06dd7fad57fd4556fab065bc1c1112fa2960b5b1b5377ac5ace5",
+      "hash_meta": "6f857186183b1f852d93fb78cb6684e9f4ab5c059a405e2c1818c614b282bf94",
+      "seqno": 1479670
+    },
+    "service": {
+      "hostname": "chrisheninger.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.31"
+  },
+  "ctime": 1506789831,
+  "expire_in": 504576000,
+  "prev": "6e5272ff09b8068cf45253e20f2ad87c5860f0c3088bd2f6b99cf684e45968cb",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgAH/HOEX3pDbeY+y1vS3TS5D1N2oOh3wuS72jKP6X430Kp3BheWxvYWTFA097ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMDA3ZmM3Mzg0NWY3YTQzNmRlNjNlY2I1YmQyZGQzNGI5MGY1Mzc2YTBlODc3YzJlNGJiZGEzMjhmZTk3ZTM3ZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDA3ZmM3Mzg0NWY3YTQzNmRlNjNlY2I1YmQyZGQzNGI5MGY1Mzc2YTBlODc3YzJlNGJiZGEzMjhmZTk3ZTM3ZDBhIiwidWlkIjoiOWExNzc4ZTk2NTcxNzUxMWUwYTgzYjhmZDAyYWUwMTkiLCJ1c2VybmFtZSI6ImNocmlzaGVuaW5nZXIifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MDY3ODk4MTgsImhhc2giOiI2MWM5NjQ4MTZkOWY1MGQyODkwZWFkMDdiN2Q1ZTUzZjlhNTEwYjc0Y2VkNDA3MWQwNjZlMjNmYjU4MWRlNzkwODRmNjYzNmFlYTZmMDZkZDdmYWQ1N2ZkNDU1NmZhYjA2NWJjMWMxMTEyZmEyOTYwYjViMWI1Mzc3YWM1YWNlNSIsImhhc2hfbWV0YSI6IjZmODU3MTg2MTgzYjFmODUyZDkzZmI3OGNiNjY4NGU5ZjRhYjVjMDU5YTQwNWUyYzE4MThjNjE0YjI4MmJmOTQiLCJzZXFubyI6MTQ3OTY3MH0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJjaHJpc2hlbmluZ2VyLmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjMxIn0sImN0aW1lIjoxNTA2Nzg5ODMxLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjZlNTI3MmZmMDliODA2OGNmNDUyNTNlMjBmMmFkODdjNTg2MGYwYzMwODhiZDJmNmI5OWNmNjg0ZTQ1OTY4Y2IiLCJzZXFubyI6MTEsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RABhxwwQ9RRhEU6h9plwEVmCIUXLwOOcNZiO1UyvgSulAue1CBTFEGCZF7nLxP0bmAXRB9UOvCdi+O3Dc9fh+nBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBhaBYy3+JZU+VKMjhfrW9BKauVUIp/KVv2FmN4PWSoQo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chrisheninger
+
+==================================================================
